@@ -53,7 +53,7 @@ async def zombies(event):
 
     con = event.pattern_match.group(1).lower()
     del_u = 0
-    del_status = "bahanchod Ek bhi Deleted Accounts nhi Found, Group Is Clean savach bharat abhiyan."
+    del_status = "No deleted account Found."
 
     if con != "clean":
         find_zombies = await event.respond("Searching For Zombies hmm starting savach group abhiyan.")
@@ -82,7 +82,7 @@ async def zombies(event):
         await event.respond("I Am Not An Admin Here first promote me with full rights!")
         return
 
-    cleaning_zombies = await event.respond("Cleaning Zombies Group ko saaf kr dege...")
+    cleaning_zombies = await event.respond("Cleaning Zombies...")
     del_u = 0
     del_a = 0
 
@@ -93,7 +93,7 @@ async def zombies(event):
                     EditBannedRequest(event.chat_id, user.id, BANNED_RIGHTS)
                 )
             except ChatAdminRequiredError:
-                await cleaning_zombies.edit("I Don't Have Ban Rights In This Group first and last bar bolta hu give me all rights.")
+                await cleaning_zombies.edit("I Don't Have Ban Rights In This Group first.")
                 return
             except UserAdminInvalidError:
                 del_u -= 1
@@ -106,6 +106,6 @@ async def zombies(event):
 
     if del_a > 0:
         del_status = f"Cleaned `{del_u}` Zombies \
-        \n`{del_a}` Zombie Admin Accounts Are Not Removed admin ki bahut respect krta hu"
+        \n`{del_a}` Zombie Admin Accounts Are Not Removed."
 
     await cleaning_zombies.edit(del_status)
