@@ -18,7 +18,7 @@ async def bright(client, message):
             a = await client.download_media(
                 message=message.reply_to_message, file_name=download_location
             )
-            await msg.edit("Processing Image...🤡")
+            await msg.edit("Processing Image...")
             image = Image.open(a)
             brightness = ImageEnhance.Brightness(image)
             edit_img_loc = "./DOWNLOADS" + "/" + userid + "/" + "Mrjoker_brightness.jpg"
@@ -175,7 +175,7 @@ async def g_blur(client, message):
             a = await client.download_media(
                 message=message.reply_to_message, file_name=download_location
             )
-            await msg.edit("Processing Image...🤡")
+            await msg.edit("Processing Image...")
             im1 = Image.open(a)
             im2 = im1.filter(ImageFilter.GaussianBlur(radius=5))
             edit_img_loc = "./DOWNLOADS" + "/" + userid + "/" + "mrjoker_blur.jpg"
