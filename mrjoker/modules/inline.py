@@ -52,10 +52,7 @@ __mod_name__ = "Inline Mode"
 __help__ = """
 ⚊❮❮❮❮ ｢INLINE BOT SERVICE」❯❯❯❯⚊
 
-**I'm more efficient when added as group admin. By the way these commands can be used by anyone in a group via inline**[SDSD.](https://telegra.ph/file/7b406588473aa764e58db.jpg)
-──「 Syntax 」──
-@Mrjokerlk_bot [command] [query]
-
+**I'm more efficient when added as group admin. By the way these commands can be used by anyone in a group via inline.**
 ╔ **Commands Available**
 ╠ `alive` - Check Bot's Stats.
 ╠ `yt` [query] - Youtube Search.
@@ -95,11 +92,8 @@ __MODULE__ = "Inline Mode"
 __HELP__ = """
 ⚊❮❮❮❮ ｢INLINE BOT SERVICE」❯❯❯❯⚊
 
-[.](https://telegra.ph/file/7b406588473aa764e58db.jpg)
 `I'm more efficient when added as group admin. By the way these commands can be used by anyone in a group via inline`
-   >> **Syntax** <<
-   
-@Mrjokerlk_bot [command] [query]
+  
 
    >> **Commands Available** <<
 🔹 **alive** - __Check Bot's Stats.__
@@ -887,7 +881,7 @@ async def inline_query_handler(client, query):
                 + app_link
                 + "'>View in Play Store</a>"
             )
-            app_details += "\n\n⚊❮❮❮❮ ｢@lkhitech」❯❯❯❯⚊"
+            app_details += "@pyrogrammers"
             rip.append(
                 InlineQueryResultArticle(
                     title=f"Datails of {app_name}",
