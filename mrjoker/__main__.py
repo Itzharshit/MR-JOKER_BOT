@@ -97,8 +97,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-**SETTINGS**
-**Tap on below button to get documents."""
+Tap on below button to get documents."""
 
 
 
