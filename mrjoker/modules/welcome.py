@@ -189,7 +189,7 @@ def new_member(update: Update, context: CallbackContext):
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
                 update.effective_message.reply_text(
-                    "ALL ATTENTION MY GOD HERE LET'S SEE WHAT HAPPEN kisi ne backchodi ki boss se to ma chod duga (｡•̀ᴗ-)✧.",
+                    "Welcome Hulk, A great love for you.",
                     reply_to_message_id=reply,
                 )
                 welcome_log = (
@@ -218,7 +218,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Support
             elif new_mem.id in DEMONS:
                 update.effective_message.reply_text(
-                    "Huh! Someone with a Demon disaster level just joined boss don't worry group mere under hai !",
+                    "Huh! Someone with a Demon disaster level just joined. !",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -226,14 +226,14 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Whitelisted
             elif new_mem.id in TIGERS:
                 update.effective_message.reply_text(
-                    "Oof! A Tiger disaster just joined TUMKO ME KUCH NA KRUGA U MY Owner FRIEND!", reply_to_message_id=reply
+                    "Oof! A Tiger disaster just joined.!", reply_to_message_id=reply
                 )
                 continue
 
             # Welcome Tigers
             elif new_mem.id in WOLVES:
                 update.effective_message.reply_text(
-                    "Oof! A Villain disaster just joined! AA Gya hero🤣👿😈", reply_to_message_id=reply
+                    "Oof! A Villain disaster just joined!", reply_to_message_id=reply
                 )
                 continue
 
